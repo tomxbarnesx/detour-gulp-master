@@ -1,0 +1,15 @@
+{
+  "name": "final1",
+  "version": "1.0.0",
+  "description": "framed detour exp. 1",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "tomxbarnesx",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^4.0.0",
+    "gulp-gh-pages": "^0.5.4"
+  }
+}

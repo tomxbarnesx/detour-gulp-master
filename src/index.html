@@ -12,7 +12,9 @@
     <script async custom-element="amp-story"
         src="https://cdn.ampproject.org/v0/amp-story-1.0.js"></script>
     <script async custom-element="amp-install-serviceworker" src="https://cdn.ampproject.org/v0/amp-install-serviceworker-0.1.js"></script>
+    
     <script async src="./detour.js"></script>
+
     <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
     <title>Deconstructed: Russian Psyops</title>
     <!-- <link rel="canonical" href="http://api.frame.media/stories/deconstructed-russian-psyops/?fbclid=IwAR210cmAnf4zDBuPujQ9TwW6siqT-M1nPJV3E4_ays8MxNEceQALoJC124o" /> -->
@@ -65,7 +67,7 @@
       .detour-button {
         font-family: Futura;
         font-size: 200%;
-        margin: 2em auto;
+        margin: 0 auto;
         color: #4c617a;
         background-color: black;
         border: 5px solid #4c617a;
@@ -76,7 +78,6 @@
       .return-button {
         font-family: Futura;
         font-size: 200%;
-        /* margin: 2em auto; */
         color: #4c617a;
         background-color: black;
         border: 5px solid #4c617a;
@@ -84,8 +85,23 @@
         box-shadow: 0px 0px 20px 2px white;  
         z-index: 9999;
         position: absolute;
-        bottom: 10%;
+        bottom: 15%;
         left: 33%;
+      }
+
+      .restart-button {
+        font-family: Futura;
+        position: absolute;
+        z-index: 9999;
+        color: #4c617a;
+        background-color: black;
+        border-radius: 50%;
+        padding: 0px 8px;
+        font-size: 200%;
+        border: 5px solid #4c617a;
+        top: 4%;
+        left: 7%;
+        cursor: pointer;
       }
 
       #detour-vid-container {
@@ -112,7 +128,7 @@
 
       #detour-vid {
         z-index: 9997;
-        width: 110%;
+        width: 100%;
         position: absolute;
       }
 
@@ -241,12 +257,14 @@
     
         
     </amp-story>
+
     <div id="detour-window">
       <span id="DetourLanding"></span>
       <div id="detour-vid-container">
         <!-- <h1>The Russian Propaganda Machine in Action</h1> -->
         <!-- <img id="detour-img" src=""> -->
         <a id="detour-return" href="#return-target"><span class="return-button">RETURN</span></a>
+        <a id="detour-restart"><span class="restart-button">&#8634;</span></a>
         <video id="detour-vid" src="./videos/RP3.mp4" playsinline>
         </video>
       </div>

@@ -12,7 +12,8 @@
 
 let detourTrigger = document.getElementById("detour-trigger");
 let detourVid = document.getElementById("detour-vid");
-let detourReturn = document.getElementById("detour-return")
+let detourReturn = document.getElementById("detour-return");
+let detourRestart = document.getElementById("detour-restart");
 
 detourTrigger.addEventListener("click", function() {
     detourVid.play();
@@ -20,5 +21,9 @@ detourTrigger.addEventListener("click", function() {
 
 detourReturn.addEventListener("click", function(){
     detourVid.pause();
+})
+
+detourRestart.addEventListener("click", function() {
+    detourVid.currentTime = 0;
 })
 
